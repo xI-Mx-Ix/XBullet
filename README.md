@@ -27,6 +27,9 @@ If you discover a bug or crash, please report them. Provide as much detail as po
 ## Credits
 
 - **JBullet** for providing the Java physics library.
+  
+## License
+See [LICENSE.md](./LICENSE.md) for the full terms.
 
 ---
 
