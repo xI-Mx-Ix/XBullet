@@ -31,6 +31,8 @@ If you discover a bug or crash, please report them. Provide as much detail as po
 ## License
 See [LICENSE.md](./LICENSE.md) for the full terms.
 
+# Official [Modrinth link](https://modrinth.com/mod/xbullet)
+
 ---
 
 **Have fun testing!**  
