@@ -1,24 +1,25 @@
-# Custom License for XBullet Mod
+# License Agreement for the XBullet Mod
 
-## You are allowed to:
+This license agreement governs the use of the "XBullet" mod (hereinafter referred to as "the Software"), including its source code, binaries, and associated assets. By using, downloading, or distributing the Software, you agree to comply with the terms of this license.
 
-- Use the mod for personal and non-commercial purposes.
-- Distribute the mod as long as it remains non-commercial.
-- Share the mod with others under the conditions specified below.
+## 1. Permitted Use
 
-## You are NOT allowed to:
+*   **Personal Use:** You are permitted to use the Software for personal, non-commercial purposes only.
+*   **Distribution:** You may distribute the unmodified Software free of charge, provided that such distribution is non-commercial and that this license agreement is included.
 
-- Use the mod for commercial purposes.
-- Modify the mod for commercial use or distribution.
+## 2. Modifications
 
-## Modifications:
+*   **Permission to Modify:** You are allowed to modify the Software for personal use.
+*   **Distribution Requirements:** If you distribute a modified version of the Software, the following conditions must be met:
+    *   The modified version must be renamed and be clearly distinguishable from the original to avoid confusion.
+    *   A conspicuous notice with a link to the official GitHub repository must be included: `https://github.com/xI-Mx-Ix/XBullet`.
+    *   All terms applicable to the original Software, especially the prohibition of commercial use, apply in full to any modified versions.
 
-- You are allowed to modify the mod, but if you do so, the modified version must be renamed and clearly distinguishable from the original.
-- Any modified versions must include a link to the official GitHub repository: [Official GitHub Repo](https://github.com/xI-Mx-Ix/XBullet).
-- The modified version must also comply with the restrictions outlined above regarding non-commercial use and distribution.
+## 3. Strict Restrictions and Prohibitions
 
-## Disclaimer:
+*   **Commercial Use:** Any and all commercial use of the Software, its components, or any modified versions is strictly prohibited. This includes, but is not limited to, selling, licensing, or incorporating it into commercial products.
+*   **Use of Code and Assets:** You are expressly forbidden from using, integrating, or copying the source code, code snippets, assets (such as graphics, sounds, etc.), or any other components of this Software in your own or any third-party projects, mods, or software. The Software is to be treated as a complete and indivisible entity.
 
-This mod is provided "as is," and the author is not responsible for any issues, damages, or unintended consequences resulting from the use of this mod.
+## 4. Disclaimer of Warranty
 
-By using or distributing this mod, you agree to comply with the terms of this license.
+The Software is provided "as is," without warranty of any kind, express or implied. The author shall not be held liable for any direct or indirect damages, data loss, malfunctions, or any other issues arising from the use or inability to use this Software. Use at your own risk.
