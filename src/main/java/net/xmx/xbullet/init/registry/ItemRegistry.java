@@ -7,6 +7,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.xmx.xbullet.item.PhysicsCreatorItem;
 import net.xmx.xbullet.item.PhysicsRemoverItem;
 import net.xmx.xbullet.item.physicsgun.PhysicsGunItem;
+import net.xmx.xbullet.item.rope.RopeItem;
 
 public class ItemRegistry {
 
@@ -14,6 +15,8 @@ public class ItemRegistry {
     public static final RegistryObject<Item> PHYSICS_REMOVER_STICK = ModRegistries.ITEMS.register("physics_remover", PhysicsRemoverItem::new);
 
     public static final RegistryObject<Item> PHYSICS_GUN = ModRegistries.ITEMS.register("physics_gun", PhysicsGunItem::new);
+
+    public static final RegistryObject<Item> ROPE = ModRegistries.ITEMS.register("rope", RopeItem::new);
 
 
     public static void register(IEventBus eventBus) {

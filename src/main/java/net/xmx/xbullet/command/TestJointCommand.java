@@ -87,31 +87,29 @@ public class TestJointCommand {
 
             ConstraintManager constraintManager = physicsWorld.getConstraintManager();
             UUID jointId = UUID.randomUUID();
-            String constraintType = "xbullet:hinge";
 
-            try (HingeConstraintSettings settings = new HingeConstraintSettings()) {
+            // --- ÄNDERUNG HIER ---
+            String constraintType = "xbullet:point";
+
+            // --- ÄNDERUNG HIER: PointConstraintSettings anstelle von HingeConstraintSettings ---
+            try (PointConstraintSettings settings = new PointConstraintSettings()) {
 
                 settings.setSpace(EConstraintSpace.LocalToBodyCOM);
-
                 settings.setPoint1(new RVec3(0.5, 0.0, 0.0));
-
                 settings.setPoint2(new RVec3(-0.5, 0.0, 0.0));
 
-                Vec3 hingeAxis = new Vec3(0, 1, 0);
-                settings.setHingeAxis1(hingeAxis);
-                settings.setHingeAxis2(hingeAxis);
+                // --- HINGE-SPEZIFISCHE ACHSEN ENTFERNT ---
 
                 TwoBodyConstraint joltConstraint = bodyInterface.createConstraint(settings, b1Id, b2Id);
 
                 if (joltConstraint != null) {
-                    // 1. Erstelle SOFORT die sichere Referenz.
                     TwoBodyConstraintRef constraintRef = joltConstraint.toRef();
-
-                    // 2. Übergib die sichere Referenz an den neuen, korrekten Konstruktor.
                     ManagedConstraint managedConstraint = new ManagedConstraint(jointId, box1Id, box2Id, constraintRef, constraintType);
 
                     constraintManager.addManagedConstraint(managedConstraint);
-                    player.getServer().execute(() -> player.sendSystemMessage(Component.literal("Successfully created hinge joint: " + jointId.toString().substring(0, 8))));
+
+                    // --- ÄNDERUNG HIER ---
+                    player.getServer().execute(() -> player.sendSystemMessage(Component.literal("Successfully created POINT joint: " + jointId.toString().substring(0, 8))));
                 } else {
                     player.getServer().execute(() -> player.sendSystemMessage(Component.literal("Failed to create Jolt constraint object via BodyInterface.")));
                 }
